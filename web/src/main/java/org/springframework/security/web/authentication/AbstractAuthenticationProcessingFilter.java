@@ -399,7 +399,7 @@ public abstract class AbstractAuthenticationProcessingFilter extends GenericFilt
 	}
 
 	public final void setRequiresAuthenticationRequestMatcher(RequestMatcher requestMatcher) {
-		Assert.notNull(requestMatcher, "requestMatcher cannot be null");
+		Assert.notNull(requestMatcher, "requestMatcher cannot be null or empty");
 		this.requiresAuthenticationRequestMatcher = requestMatcher;
 	}
 
